@@ -62,7 +62,7 @@ async def auto_filter(bot, update):
     if filters:
         results.append(
                 [
-                    InlineKeyboardButton("💢 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ 💢", url="https://t.me/ds_movies1")
+                    InlineKeyboardButton("💢 Join our Channel 💢", url="https://t.me/ds_movies1")
                 ]
             )
         for filter in filters: # iterating through each files
@@ -86,7 +86,7 @@ async def auto_filter(bot, update):
             file_size = "" if file_size == ("[0 B]") else file_size
             
             # add emoji down below inside " " if you want..
-            button_text = f"⚜{file_size}{file_name}"
+            button_text = f"🔰{file_size}{file_name}"
             
 
             if file_type == "video":
@@ -152,7 +152,7 @@ async def auto_filter(bot, update):
         if len_result != 1:
             result[0].append(
                 [
-                    InlineKeyboardButton("🚀 Go to Next page 🚀", callback_data=f"navigate(0|next|{query})")
+                    InlineKeyboardButton("🔱 Go to Next page 🔱", callback_data=f"navigate(0|next|{query})")
                 ]
             )
         
@@ -187,13 +187,13 @@ async def auto_filter(bot, update):
                 if ((len(ibuttons)%2) == 0):
                     ibuttons.append(
                         [
-                            InlineKeyboardButton(f"⚜ {chat_name} ⚜", url=invite_link)
+                            InlineKeyboardButton(f"🔰 {chat_name} 🔰", url=invite_link)
                         ]
                     )
 
                 else:
                     ibuttons[-1].append(
-                        InlineKeyboardButton(f"⚜ {chat_name} ⚜", url=invite_link)
+                        InlineKeyboardButton(f"🔰 {chat_name} 🔰", url=invite_link)
                     )
                 
             for x in ibuttons:
