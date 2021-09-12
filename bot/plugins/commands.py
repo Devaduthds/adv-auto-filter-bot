@@ -29,7 +29,7 @@ async def start(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @movie_house2</b>",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -37,13 +37,13 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 Join our Group 🎖', url="https://t.me/Cinemahub182"
+                                    '⭕️ Join our Channel ⭕️', url="https://t.me/ds_movies1"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
+                                    '🎖️ Share Group 🎖️', url="https://t.me/share/url?url=https://t.me/movie_house2"
                                 )
                         ]
                        
@@ -56,20 +56,20 @@ async def start(bot, update):
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @movie_house2</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 Join our Group 🎖', url="https://t.me/Cinemahub182"
+                                    '⭕️ Join our Channel ⭕️', url="https://t.me/ds_movies1"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
+                                    '🎖️ Share Group 🎖️', url="https://t.me/share/url?url=https://t.me/movie_house2"
                                 )
                         ]
                     ]
@@ -81,20 +81,20 @@ async def start(bot, update):
             await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @movie_house2</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 join our Group 🎖', url="https://t.me/Cinemahub182"
+                                    '⭕️ join our Channel ⭕️', url="https://t.me/ds_movies1"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
+                                    '🎖️ Share Group 🎖️', url="https://t.me/share/url?url=https://t.me/movie_house2"
                                 )
                         ]
                     ]
@@ -107,10 +107,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('My Developer', url='https://t.me/Anandhukuttu'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Anandhu123555/Autofilter-look')
+        InlineKeyboardButton('My Developer', url='https://t.me/DS_KUNJAVA'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Kunjavads/Autofilter-look.git')
     ],[
-        InlineKeyboardButton('Support🛠', url='https://t.me/Cinemahub182')
+        InlineKeyboardButton('Support🙏', url='https://t.me/movie_house2')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
