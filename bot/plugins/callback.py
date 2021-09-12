@@ -90,7 +90,7 @@ async def cb_navg(bot, update: CallbackQuery):
     else:
         temp_results.append([
             InlineKeyboardButton("⏮ Back", callback_data=f"navigate({index_val}|back|{query})"),
-            InlineKeyboardButton("🚀 Go to Next page 🚀", callback_data=f"navigate({index_val}|next|{query})")
+            InlineKeyboardButton("🔱 Go to Next page 🔱", callback_data=f"navigate({index_val}|next|{query})")
         ])
 
     if not int(index_val) == 0:    
@@ -122,7 +122,7 @@ async def cb_navg(bot, update: CallbackQuery):
                     [
                         InlineKeyboardButton
                             (
-                                f"⚜ {chat_name} ⚜", url=invite_link
+                                f"🔰 {chat_name} 🔰", url=invite_link
                             )
                     ]
                 )
@@ -131,7 +131,7 @@ async def cb_navg(bot, update: CallbackQuery):
                 ibuttons[-1].append(
                     InlineKeyboardButton
                         (
-                            f"⚜ {chat_name} ⚜", url=invite_link
+                            f"🔰 {chat_name} 🔰", url=invite_link
                         )
                 )
             
@@ -1608,7 +1608,7 @@ async def cb_about(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/Anandhukuttu"
+                    "My Dev ⚡", url="https://t.me/DS_KUNJAVA"
                 ),
                 
             InlineKeyboardButton
@@ -1639,10 +1639,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/Anandhukuttu'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Anandhu123555/Autofilter-look')
-        ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/Cinemahun182')
+            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/DS_KUNJAVA'),
+            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Kunjavads/Autofilter-look.git')
+        ],
+            InlineKeyboardButton('Support 🛠', url='https://t.me/movie_house2')
         ],[
             InlineKeyboardButton('Help ⚙', callback_data="help")
         ]]
